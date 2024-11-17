@@ -1,4 +1,4 @@
-import { Box, Container, Paper, Stack } from '@mui/material';
+import { Container, Paper, Stack } from '@mui/material';
 import { MainScene } from './components/MainScene';
 import { TopRow } from './components/TopRow';
 
@@ -6,21 +6,14 @@ import { TopRow } from './components/TopRow';
 
 function App() {
   return (
-    <Box sx={{
-      height: '100%', width: '100%',
-      backgroundColor: t => t.palette.background.default
-    }}>
-      <Container maxWidth="md">
-        <Stack justifyContent='center' alignItems='center' height="100vh">
-          <Paper sx={{ padding: '40px' }} elevation={3}>
-            <Stack spacing={1}>
-              <TopRow />
-              <MainScene />
-            </Stack>
-          </Paper>
+    <Container maxWidth="lg" sx={{ paddingY: 8 }}>
+      <Paper sx={{ padding: '40px', borderRadius: '28px' }} elevation={3}>
+        <Stack spacing={3}>
+          <TopRow />
+          <MainScene />
         </Stack>
-      </Container>
-    </Box>
+      </Paper>
+    </Container>
   );
 }
 

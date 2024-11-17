@@ -1,22 +1,27 @@
-import { Box, Stack, Typography } from '@mui/material';
-import { Row } from '../shared/Row';
-import { Outlet } from 'react-router-dom';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import { Box, Grid2 as Grid, IconButton, Stack, Typography } from '@mui/material';
 
 export const MainScene = () => {
-    return <Row spacing={4}>
-        <Stack spacing={2}>
-            <Box>LinkedIn</Box>
-            <Box>Github</Box>
-            <Box>Facebook</Box>
-            <Box>Youtube</Box>
-        </Stack>
-        <Stack spacing={1}>
-            <Typography variant="h3">Luis Camacho III</Typography>
-            <Typography variant='h4' fontWeight={300} width="400px">I like to do lots of things.</Typography>
-        </Stack>
-        <Outlet />
-        <Box>
-            <img src="closeHeadshot.JPG" alt="" />
-        </Box>
-    </Row>
+    return <Grid container spacing={3}>
+        <Grid size={{ xs: 12, sm: 2 }} alignContent='center' justifyItems='center'>
+            <Stack spacing={2} direction={{ xs: 'row', sm: 'column' }}>
+                <IconButton><LinkedInIcon /></IconButton>
+                <IconButton><GitHubIcon /></IconButton>
+                <IconButton><FacebookIcon /></IconButton>
+                <IconButton><YouTubeIcon /></IconButton>
+            </Stack>
+        </Grid>
+        <Grid size={{ xs: 12, sm: 4 }}>
+            <Stack spacing={1}>
+                <Typography variant="h3">Luis Camacho III</Typography>
+                <Typography fontWeight={300}>I like to do lots of things.</Typography>
+            </Stack>
+        </Grid>
+        <Grid size={{ xs: 12, sm: 6 }}>
+            <Box component="img" sx={{ borderRadius: '28px', inlineSize: '-webkit-fill-available' }} src="headshotFull.jpg"></Box>
+        </Grid>
+    </Grid>
 }

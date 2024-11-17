@@ -1,8 +1,26 @@
-import { createTheme } from '@mui/material';
+import { createTheme, responsiveFontSizes } from '@mui/material';
 
-export const theme = createTheme({
+let theme = createTheme({
     typography: {
-        fontFamily: ['Rubik Variable', 'sans-serif'].join(',')
+        fontFamily: ['Rubik Variable', 'sans-serif'].join(','),
+        h1: {
+            fontSize: '36px'
+        },
+        h2: {
+            fontSize: '24px'
+        },
+        h3: {
+            fontSize: '18px'
+        },
+        h4: {
+            fontSize: '16px'
+        },
+        body1: {
+            fontSize: '16px'
+        },
+        body2: {
+            fontSize: '14px'
+        },
     },
     palette: {
         background: {
@@ -10,13 +28,7 @@ export const theme = createTheme({
             paper: '#FFFFFF'
         }
     },
-    components: {
-        // Name of the component ⚛️
-        MuiButtonBase: {
-            defaultProps: {
-                // The props to apply
-                disableRipple: true, // No more ripple, on the whole application 💣!
-            },
-        },
-    },
 });
+theme = responsiveFontSizes(theme);
+
+export default theme;
