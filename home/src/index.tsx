@@ -12,6 +12,9 @@ import {
 import './index.css'
 
 import '@fontsource-variable/rubik';
+import { BioPage } from './components/BioPage';
+import { CodePage } from './components/CodePage';
+import { TeacherPage } from './components/TeacherPage';
 
 const router = createBrowserRouter([
   {
@@ -19,8 +22,16 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "test",
-        element: <div>Hello test!</div>,
+        path: "bio",
+        element: <BioPage />,
+      },
+      {
+        path: "code",
+        element: <CodePage />,
+      },
+      {
+        path: "teacher",
+        element: <TeacherPage />,
       },
     ]
   },
