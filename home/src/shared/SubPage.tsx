@@ -8,7 +8,7 @@ export const SubPage = ({ children }: PropsWithChildren) =>
         sx={{
             position: 'relative',
             zIndex: 0,
-            padding: '64px 40px 40px 40px',
+            padding: '72px 40px 40px 40px',
             marginX: 2,
             top: '-40px',
             borderRadius: '28px',

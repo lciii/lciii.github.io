@@ -19,8 +19,8 @@ export const HeaderButton = ({ children, title, link, timeout }: PropsWithChildr
                     padding: 4,
                     flexDirection: 'column',
                     '&:hover': {
-                        transform: 'scale(1.05)',
-                        transition: 'all .4s'
+                        transform: 'scale(1.025)',
+                        transition: 'all .2s'
                     },
                     '& svg': {
                         width: "3em", height: "3em"

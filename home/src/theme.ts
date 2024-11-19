@@ -3,6 +3,7 @@ import { createTheme, responsiveFontSizes } from '@mui/material';
 let theme = createTheme({
     typography: {
         fontFamily: ['Rubik Variable', 'sans-serif'].join(','),
+        fontWeightRegular: 300,
         h1: {
             fontSize: '36px'
         },
@@ -28,6 +29,18 @@ let theme = createTheme({
             paper: '#FFFFFF'
         }
     },
+    components: {
+        MuiButtonBase: {
+            styleOverrides: {
+                root: {
+                    '&:hover': {
+                        transform: 'scale(1.05)',
+                        transition: 'all .2s'
+                    },
+                }
+            }
+        }
+    }
 });
 theme = responsiveFontSizes(theme);
 
