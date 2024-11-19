@@ -13,7 +13,7 @@ import './index.css'
 
 import '@fontsource-variable/rubik';
 import { BioPage } from './components/BioPage';
-import { CodePage } from './components/CodePage';
+import { CodePage } from './components/codePage/CodePage';
 import { TeacherPage } from './components/TeacherPage';
 
 const router = createBrowserRouter([

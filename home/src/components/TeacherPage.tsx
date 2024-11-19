@@ -1,23 +1,6 @@
-import { Typography, IconButton, Link, Stack, Grid2 as Grid } from "@mui/material"
-import { Row } from "../shared/Row"
+import { Grid2 as Grid, Link, Stack, Typography } from "@mui/material"
 import { SubPage } from "../shared/SubPage"
-
-interface VideoProps {
-    src: string
-}
-
-const Video = ({ src }: VideoProps) => {
-    return <iframe
-        width="100%"
-        height="315"
-        src={src}
-        title="YouTube video player"
-        style={{ border: 0 }}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-    >
-    </iframe>
-}
+import { Video } from "../shared/Video"
 
 // const videoIds = ['WkvAmCh2rRo','OPiPlbfzJ4A','I0hh86GZhhk','','','','','']
 
