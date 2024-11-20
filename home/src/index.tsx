@@ -1,25 +1,25 @@
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { CssBaseline, ThemeProvider } from '@mui/material';
-import theme from './theme';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import reportWebVitals from './reportWebVitals';
+import theme from './theme';
 
-import './index.css'
+import './index.css';
 
 import '@fontsource-variable/rubik';
 import { BioPage } from './components/BioPage';
 import { CodePage } from './components/codePage/CodePage';
 import { TeacherPage } from './components/TeacherPage';
+import MarketingPage from './marketing-page/MarketingPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <MarketingPage />,
     children: [
       {
         path: "bio",
