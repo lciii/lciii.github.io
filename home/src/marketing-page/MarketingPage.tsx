@@ -17,19 +17,13 @@ export default function MarketingPage(props: { disableCustomTheme?: boolean }) {
     <AppTheme {...props}>
       <CssBaseline enableColorScheme />
 
-      {/* <AppAppBar /> */}
       <Hero />
       <div>
         <LogoCollection />
+        <Divider />
         <Features />
         <Divider />
         <Testimonials />
-        <Divider />
-        <Highlights />
-        <Divider />
-        <Pricing />
-        <Divider />
-        <FAQ />
         <Divider />
         <Footer />
       </div>
