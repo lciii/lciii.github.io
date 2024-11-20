@@ -3,8 +3,6 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-
-
 const sideImages = ['speaking.png', 'guitar.png', 'stage.png']
 
 export default function Features() {

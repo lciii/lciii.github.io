@@ -29,18 +29,6 @@ let theme = createTheme({
             paper: '#FFFFFF'
         }
     },
-    components: {
-        MuiButtonBase: {
-            styleOverrides: {
-                root: {
-                    '&:hover': {
-                        transform: 'scale(1.05)',
-                        transition: 'all .2s'
-                    },
-                }
-            }
-        }
-    }
 });
 theme = responsiveFontSizes(theme);
 
