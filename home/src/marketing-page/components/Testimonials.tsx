@@ -1,4 +1,4 @@
-import LaunchIcon from '@mui/icons-material/Launch';
+import { Link } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -7,8 +7,6 @@ import CardHeader from '@mui/material/CardHeader';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
-import { IconButtonLink } from '../../shared/IconButtonLink';
-import { Link } from '@mui/material';
 
 const userTestimonials = [
   {

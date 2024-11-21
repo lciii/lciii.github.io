@@ -1,51 +1,39 @@
-import { CssBaseline, ThemeProvider } from '@mui/material';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import reportWebVitals from './reportWebVitals';
-import theme from './theme';
-
-import './index.css';
-
-import '@fontsource-variable/rubik';
-import { BioPage } from './components/BioPage';
-import { CodePage } from './components/codePage/CodePage';
-import { TeacherPage } from './components/TeacherPage';
 import MarketingPage from './marketing-page/MarketingPage';
+import reportWebVitals from './reportWebVitals';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MarketingPage />,
-    children: [
-      {
-        path: "bio",
-        element: <BioPage />,
-      },
-      {
-        path: "code",
-        element: <CodePage />,
-      },
-      {
-        path: "teacher",
-        element: <TeacherPage />,
-      },
-    ]
-  },
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <MarketingPage />,
+//     children: [
+//       {
+//         path: "bio",
+//         element: <BioPage />,
+//       },
+//       {
+//         path: "code",
+//         element: <CodePage />,
+//       },
+//       {
+//         path: "teacher",
+//         element: <TeacherPage />,
+//       },
+//     ]
+//   },
+// ]);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <CssBaseline />
+    <MarketingPage />
+    {/* <CssBaseline />
     <ThemeProvider theme={theme}>
       <RouterProvider router={router} />
-    </ThemeProvider>
+    </ThemeProvider> */}
   </React.StrictMode>
 );
 

@@ -41,7 +41,6 @@ export default function Features() {
                 borderRadius: 4,
                 maxWidth: '100%',
                 maxHeight: '100%',
-                gap: 1,
               }}
               component="img"
               src={s} alt="" />
