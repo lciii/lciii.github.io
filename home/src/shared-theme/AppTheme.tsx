@@ -32,7 +32,6 @@ export default function AppTheme({
           cssVarPrefix: 'template',
         },
         colorSchemes,
-        palette: { mode: 'dark' },
         typography,
         shadows,
         shape,

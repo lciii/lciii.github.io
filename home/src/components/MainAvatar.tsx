@@ -6,7 +6,6 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Box, Grid2 as Grid, Link, Stack, Typography } from '@mui/material';
 import { Link as RouteLink } from 'react-router-dom';
 import { IconButtonLink } from '../shared/IconButtonLink';
-import { Row } from '../shared/Row';
 
 export const MainAvatar = () => {
     return <Stack spacing={0}>

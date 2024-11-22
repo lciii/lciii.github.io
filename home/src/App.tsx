@@ -6,7 +6,6 @@ import { Box, Container, Grid2 as Grid, Paper } from '@mui/material';
 import { Outlet, useLocation } from 'react-router-dom';
 import { HeaderButton } from './components/HeaderButton';
 import { MainAvatar } from './components/MainAvatar';
-import { Row } from './shared/Row';
 
 //inspo: https://kenjimmy.xyz/
 //https://react-type-animation.netlify.app/examples
