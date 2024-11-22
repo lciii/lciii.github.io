@@ -6,12 +6,14 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import LogoCollection from './components/LogoCollection';
 import Testimonials from './components/Testimonials';
+import ColorModeIconDropdown from '../shared-theme/ColorModeIconDropdown';
 
 export default function MarketingPage(props: { disableCustomTheme?: boolean }) {
   return (
     <AppTheme {...props}>
-      <CssBaseline />
+      <CssBaseline enableColorScheme />
 
+      <ColorModeIconDropdown />
       <Hero />
       <div>
         <LogoCollection />

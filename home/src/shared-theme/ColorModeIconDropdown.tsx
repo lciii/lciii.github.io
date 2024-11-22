@@ -52,6 +52,7 @@ export default function ColorModeIconDropdown(props: IconButtonOwnProps) {
         aria-controls={open ? 'color-scheme-menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
+        sx={{ position: 'fixed', top: '8px', right: '8px', backgroundColor: t => t.palette.background.default }}
         {...props}
       >
         {icon}
