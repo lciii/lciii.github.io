@@ -9,7 +9,7 @@ export default function Features() {
   return (
     <Container sx={{ py: { xs: 4, sm: 8 } }}>
       <Stack spacing={2}>
-        <Box sx={{ width: { sm: '100%', md: '60%' } }}>
+        <Box sx={{ width: { sm: '100%', md: '60%', alignSelf: 'center' } }}>
           <Typography
             component="h2"
             variant="h4"
@@ -50,7 +50,7 @@ export default function Features() {
           <Box
             sx={{
               borderRadius: 4,
-              maxWidth: '100%',
+              maxWidth: { xs: '100%', sm: '50vw' },
               maxHeight: '100%',
             }}
             component="img"

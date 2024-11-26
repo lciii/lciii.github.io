@@ -1,15 +1,17 @@
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { Link, Typography } from '@mui/material';
+import { Button, ButtonProps, Link, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 import { PropsWithChildren } from 'react';
+import { Row } from '../../shared/Row';
 
 const IconButtonLink = ({ children, ...props }: PropsWithChildren<IconButtonProps> & React.ComponentProps<'a'>) => {
   return <IconButton
@@ -22,6 +24,10 @@ const IconButtonLink = ({ children, ...props }: PropsWithChildren<IconButtonProp
   >
     {children}
   </IconButton>
+}
+
+const DownloadButton = (props: ButtonProps) => {
+  return <Button size="small" variant="outlined" component="a" download {...props}>{props.children}<FileDownloadIcon /></Button>
 }
 
 export default function Footer() {
@@ -88,6 +94,10 @@ export default function Footer() {
             <LinkedInIcon />
           </IconButtonLink>
         </Stack>
+        <Row spacing={2} sx={{ '& *': { fontSize: '12px !important' } }}>
+          <DownloadButton href="LCamachoIII-SoftEng-Resume.pdf">Short Resume</DownloadButton>
+          <DownloadButton href="LuisCamachoIII_FullStack_Resume.pdf">Long Resume</DownloadButton>
+        </Row>
       </Stack>
     </Container>
   );

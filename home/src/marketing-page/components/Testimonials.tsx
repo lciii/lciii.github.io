@@ -1,4 +1,4 @@
-import { Link } from '@mui/material';
+import { Link, useScrollTrigger } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -63,7 +63,9 @@ const userTestimonials: Testimonial[] = [
 ];
 
 export default function Testimonials() {
+  const trigger = useScrollTrigger()
   const logos = useLogos()
+  console.log('trigger', trigger)
   return (
     <Container
       id="testimonials"
